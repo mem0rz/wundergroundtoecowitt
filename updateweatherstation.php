@@ -12,13 +12,19 @@ $destParams = [
 	'dateutc' => $params['dateutc'],
 	'tempf' => $params['tempf'],
 	'humidity' => $params['humidity'],
+	'absbaromin' => $params['baromabsin'],
+	'baromin' => $params['baromrelin'],
 	'winddir' => $params['winddir'],
 	'windspeedmph' => $params['windspeedmph'],
 	'windgustmph' => $params['windgustmph'],
 	'solarradiation' => $params['solarradiation'],
+	'UV' => $params['uv'],
 	'rainin' => $params['rainratein'],
+	'dailyrainin' => $params['dailyrainin'],
+	'weeklyrainin' => $params['weeklyrainin'],
+	'monthlyrainin' => $params['monthlyrainin'],
 ];
-//ID=test&PASSWORD=test&indoortempf=66.9&indoorhumidity=36&tempf=47.9&humidity=83&temp1f=64.9&humidity1=38&dewptf=43.0&windchillf=47.9&absbaromin=30.0&baromin=29.99&windspeedmph=0.0&windgustmph=0.0&winddir=90&windspdmph_avg2m=0.0&winddir_avg2m=135&windgustmph_10m=0.0&windgustdir_10m=135&rainin=0.0&dailyrainin=0.02&weeklyrainin=0.54&monthlyrainin=0.56&solarradiation=0.0&UV=0&dateutc=2024-4-10%2012:4:2&action=updateraw&realtime=1&rtfreq=5& HTTP/1.1
+//ID=IHONGK51&PASSWORD=Zfbw541h&indoortempf=66.9&indoorhumidity=36&tempf=47.9&humidity=83&temp1f=64.9&humidity1=38&dewptf=43.0&windchillf=47.9&absbaromin=30.0&baromin=29.99&windspeedmph=0.0&windgustmph=0.0&winddir=90&windspdmph_avg2m=0.0&winddir_avg2m=135&windgustmph_10m=0.0&windgustdir_10m=135&rainin=0.0&dailyrainin=0.02&weeklyrainin=0.54&monthlyrainin=0.56&solarradiation=0.0&UV=0&dateutc=2024-4-10%2012:4:2&action=updateraw&realtime=1&rtfreq=5& HTTP/1.1
 
 //curl -d "PASSKEY=0BA6979558C5D2ADB6B20F4B23A685AF&stationtype=GW1000_V1.4.7&dateutc=2019-05-28+07:33:48&tempinf=79.7&humidityin=76&baromrelin=29.719&baromabsin=29.719&tempf=79.3&humidity=70&winddir=277&windspeedmph=0.00&windgustmph=0.00&maxdailygust=0.00&solarradiation=0.00&uv=0&rainratein=0.000&eventrainin=0.000&hourlyrainin=0.000&dailyrainin=0.000&weeklyrainin=0.000&monthlyrainin=0.059&yearlyrainin=6.803&totalrainin=6.803&temp1f=78.44&humidity1=74&temp2f=82.04&humidity2=70&temp4f=82.94&humidity4=66&soilmoisture2=0&soilmoisture3=0&soilmoisture4=8&soilmoisture5=0&wh65batt=1&wh68batt=1.50&wh40batt=1.6&wh26batt=0&batt1=0&batt2=0&batt4=0&batt6=0&Siolbatt1=0.0&Siolbatt2=1.5&Siolbatt3=1.5&Siolbatt4=1.5&Siolbatt5=1.5&Siolbatt6=0.0&Siolbatt7=0.0&Siolbatt8=0.0&pm25batt1=0&pm25batt2=0&pm25batt3=0&pm25batt4=0&Freq=433M&model=GW1000" -X POST http://192.168.2.205/data/report/
 
