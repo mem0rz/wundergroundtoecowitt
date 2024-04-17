@@ -10,7 +10,7 @@ if (empty($params)) {
 
 // 目标参数
 $destParams = [
-  'PASSKEY' => '0BA6979558C5D2ADB6B20F4B23A685AF',
+  'PASSKEY' => 'yourpasskey',
 	'stationtype'  => 'AIRAINTECH-WS300',
 	'dateutc' => $params['dateutc'],
 	'tempf' => $params['tempf'],
@@ -39,7 +39,7 @@ $destResult = httpPost($url, $destParams);
 // 输出转发返回结果
 echo $destResult;
 
-// 再次原始url
+// 再次原始url到homeassistant
 $srcUrl = sprintf("http://192.168.0.16:8087/weatherstation/updateweatherstation.php?%s",http_build_query($params));
 $srcResult = file_get_contents($srcUrl);
 
